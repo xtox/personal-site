@@ -1,0 +1,188 @@
+html {
+    background-color: lightgray;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px auto;
+    gap: 10px;
+}
+
+.hero {
+    height: 300px;
+    grid-column: span 2;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.profile-description h1 {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;
+    margin-left: 50px;
+}
+
+.profile-description h2 {
+    font-family: "JetBrains Mono";
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+.left-banner {
+    font-family: "Open Sans", sans-serif;
+    margin-left: 50px;
+}
+
+.left-banner h2 {
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0px;
+}
+
+.left-banner ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.left-banner progress {
+    width: 100px;
+}
+
+.first-level {
+    font-weight: 700;
+    margin-top: 10px
+}
+
+.main-content {
+    font-family: "Open Sans", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main-content ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+.main-content h2 {
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0px;
+}
+
+.main-content h3 {
+    margin-bottom: 0px;
+}
+
+.interest {
+    grid-column: span 2;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.interest h2 {
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-items: center;
+}
+
+.contact-me {
+    grid-column: span 2;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-me a {
+    background-color: dodgerblue;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.contact-me a:link {
+    text-decoration: none;
+}
+
+.contact-me a:visited {
+    text-decoration: none;
+}
+
+.contact-me a:hover {
+    text-decoration: none;
+}
+
+.contact-me a:active {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .profile-picture {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .profile-description {
+        width: 100%;
+    }
+    
+    .profile-description h1 {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    .profile-description h2 {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .left-banner {
+        margin-left: 10px;
+    }
+
+    .main-content {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-me {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+}
